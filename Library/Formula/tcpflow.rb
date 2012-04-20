@@ -15,7 +15,7 @@ class Tcpflow < Formula
       cp Dir["#{MacOS.xcode_prefix}/usr/share/libtool/config/config.*"], "."
     end
 
-    system "./configure", "--disable-debug", "--disable-dependency-tracking",
+    system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
                           "--mandir=#{man}"
     system "make install"
